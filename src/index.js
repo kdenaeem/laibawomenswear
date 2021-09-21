@@ -2,16 +2,39 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Homepage from './Homepage';
+import Product_Card from './Product_Card';
+import Title from './Title';
+import Navigation_Bar from './Navigation_Bar';
 
-function ShopInfo() {
-  return(
-    <h1>Welcome to LaibaWomensWear</h1>
+// function ShopInfo() {
+//   return(
+//     <div>
+//       <h1>Welcome to LaibaWomensWear</h1>
+//       <ul>Age : 18</ul>
+//       <ul>Occupation : Unemployed</ul>
 
+//     </div>
+    
+//   )
+// }
+
+function App() {
+  return (
+    <div>
+      <Title/>
+      <Navigation_Bar/>
+      <Product_Card image="/Tshirt.png" title="Salmon T shirt"/>
+      <Product_Card image="/Tshirt.png" title="Salmon T shirt"/>
+      <Product_Card image="/Tshirt.png" title="Salmon T shirt"/>
+
+    </div>
   )
+
 }
 
 ReactDOM.render(
-  <ShopInfo/>, 
+  <App />,
   document.getElementById('root')
 );
 
